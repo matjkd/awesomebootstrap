@@ -47,10 +47,10 @@
 <section id="top-menu">
     <div class="container">
         <div class="row">
-            <div class="span6 hidden-phone">
-                <p class="feed">Subscribe to be notified for updates: <a href="#">RSS Feed</a></p>
+            <div class="span8 ">
+                <?=$this->load->view('template/menu')?>
             </div>
-            <div class="span6">
+            <div class="span4">
                 <ul class="top-social">
                     <li><a href="#" rel="tooltip" data-placement="bottom" data-original-title="Facebook"><i class="icon-facebook"></i></a></li>
                     <li><a href="#" rel="tooltip" data-placement="bottom" data-original-title="Twitter"><i class="icon-twitter"></i></a></li>
@@ -67,120 +67,18 @@
 <header id="header">
     <div class="container">
         <div class="row">
-            <div class="span3 logo">
-                <h1><a class="logo-img" href="./" title="responsive template">Awesome! Bootstrap</a></h1>
+            <div class="span6 logo ">
+                <h1><a class="logo-img site-title" href="./" title="responsive template"><i class="icon-bolt "></i> Awesome Bootstrap</a></h1>
             </div>
-            <div class="span9">
-                <nav id="menu" class="clearfix pull-right">
-                    <ul>
-                        <li><a href="./index.html" class="current"><span class="name">Home Page</span></a>
-                            <ul>
-                                <li><a href="./index.html">Home Page 1</a></li>
-                                <li><a href="./index2.html">Home Page 2</a></li>
-                                <li><a href="./index3.html">Home Page 3</a></li>
-                                <li class="last"><a href="./index4.html">Home Page 4</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="./about.html"><span class="name">Features</span></a>
-                            <ul>
-                                <li><a href="./about.html">About Us</a></li>
-                                <li><a href="./services.html">Our Services</a></li>
-                                <li><a href="./full-width.html">Full Width</a></li>
-                                <li><a href="./bs-scaffolding.html">BootStrap Pages</a>
-                                    <ul>
-                                        <li><a href="./bs-scaffolding.html">Scaffolding</a></li>
-                                        <li><a href="./bs-base-css.html">Base CSS</a></li>
-                                        <li><a href="./bs-components.html">Components</a></li>
-                                        <li><a href="./bs-javascript.html">JavaScript</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="./font-awesome.html">FontAwesome</a></li>
-                                <li><a href="./font-icomoon.html">IcoMoon</a></li>
-                                <li><a href="./price-table.html">Price Table</a></li>
-                                <li class="last"><a href="./404.html">404 Page not found</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="./portfolio4.html"><span class="name">Portfolio</span></a>
-                            <ul>
-                                <li><a href="./portfolio2.html">Portfolio 2 col</a>
-                                    <ul>
-                                        <li><a href="./portfolio2.html">Portfolio 2 Columns</a></li>
-                                        <li class="last"><a href="./portfolio2ex.html">Portfolio 2 Columns Extended</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="./portfolio3.html">Portfolio 3 col</a>
-                                    <ul>
-                                        <li><a href="./portfolio3.html">Portfolio 3 Columns</a></li>
-                                        <li class="last"><a href="./portfolio3ex.html">Portfolio 3 Columns Extended</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="./portfolio4.html">Portfolio 4 col</a>
-                                    <ul>
-                                        <li><a href="./portfolio4.html">Portfolio 4 Columns</a></li>
-                                        <li class="last"><a href="./portfolio4ex.html">Portfolio 4 Columns Extended</a></li>
-                                    </ul>
-                                </li>
-                                <li class="last"><a href="./portfolio-single.html">Single Portfolio</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="./blog-sidebar-right.html"><span class="name">Blogs</span></a>
-                            <ul>
-                                <li><a href="./blog-sidebar-right.html">Blog - Sidebar Right</a></li>
-                                <li><a href="./blog-sidebar-left.html">Blog - Sidebar Left</a></li>
-                                <li><a href="./blog-type-1.html">Blog Type 1</a></li>
-                                <li><a href="./blog-type-2.html">Blog Type 2</a></li>
-                                <li class="last"><a href="./blog-single.html">Blog Single</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="./contact.html"><span class="name">Contacts</span></a></li>
-                    </ul>
-                </nav>
+            <div class="span6">
+            	
+               
             </div>
         </div>
     </div>
 </header>
 
-<!--slider-->
-<section id="slider">
-    <div class="container">
-        <div class="row">
-            <div class="span12">
-                <div id="mainslider" class="flexslider">
-                    <ul class="slides">
-                        <li>
-                            <img src="example/slider1.jpg" alt="" />
-                            <div class="slide-caption">
-                                <h3 class="slide-title">Mauris feugiat elit sed elit consequat massa nunc</h3>
-                                <p class="slide-subtitle">Etiam porttitor aliquet nunc, non pulvinar nulla placerat et. Ut ipsum sapien, iaculis nec aliquet vel, pretium id mauris. Cras aliquet magna in eros mattis eu gravida urna fermentum.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="example/slider2.jpg" alt="" />
-                            <div class="slide-caption bg-color-blue-dark">
-                                <h3 class="slide-title">Proin vel neque vel leo pulvinar tempor vitae sed</h3>
-                                <p class="slide-subtitle">Etiam porttitor aliquet nunc, non pulvinar nulla placerat et. Ut ipsum sapien, iaculis nec aliquet vel, pretium id mauris. Cras aliquet magna in eros mattis eu gravida urna fermentum.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="example/slider3.jpg" alt="" />
-                            <div class="slide-caption bg-color-green-dark">
-                                <h3 class="slide-title">Maecenas ultrices, est vel aliquam luctus posuere</h3>
-                                <p class="slide-subtitle">Etiam porttitor aliquet nunc, non pulvinar nulla placerat et. Ut ipsum sapien, iaculis nec aliquet vel, pretium id mauris. Cras aliquet magna in eros mattis eu gravida urna fermentum.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="example/slider4.jpg" alt="" />
-                            <div class="slide-caption bg-color-orange-dark">
-                                <h3 class="slide-title">Cras dictum enim vitae urna auctor feugiat</h3>
-                                <p class="slide-subtitle">Etiam porttitor aliquet nunc, non pulvinar nulla placerat et. Ut ipsum sapien, iaculis nec aliquet vel, pretium id mauris. Cras aliquet magna in eros mattis eu gravida urna fermentum.</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+
 
 <!--container-->
 <section id="container">
@@ -193,25 +91,25 @@
                         <div class="caption fg-color-white">
                             <h3>Simple to use</h3>
                             <p>
-                                Whether you're building from scratch or using a CMS like wordpress, deploying Bootstrap is simple to put in place
+                                It is simple to install and customise bootstrap to your own needs. There is plenty of documentation and examples, especially on this site.
                             </p>
                         </div>
                     </li>
                     <li class="span4 thumbnail bg-color-blue fg-color-white">
-                        <div class="image-icon"><i class="icon-globe"></i></div>
+                        <div class="image-icon"><i class="icon-desktop"></i></div>
                         <div class="caption fg-color-white">
-                            <h3>Responsive Layouts</h3>
+                            <h3>Responsive</h3>
                             <p>
                                 Twitter Bootstrap is fully responsive, adjusting to all screen sizes, from mobile phones to huge displays. No effort required on your part.
                             </p>
                         </div>
                     </li>
                     <li class="span4 thumbnail bg-color-blue-dark fg-color-white">
-                        <div class="image-icon"><i class="icon-magic"></i></div>
+                        <div class="image-icon"><i class="icon-check"></i></div>
                         <div class="caption fg-color-white">
-                            <h3>Features! Features! Features!</h3>
+                            <h3>Tons of Features!</h3>
                             <p>
-                                Bootstrap is loaded with cool stuff. Add a theme and there's even more feature. You pretty much have all you need to build an awesome site.
+                                Bootstrap is loaded with cool stuff. Add a theme and there's even more features. You pretty much have all you need to build an awesome site.
                             </p>
                         </div>
                     </li>
@@ -222,10 +120,11 @@
         </div>
         <div class="row">
             <div class="span12">
-                <div class="hero-unit">
+                <div class="hero-unit pull-center">
                     <h1>Welcome to Awesome Bootstrap</h1>
                     <p>Twitter Bootstrap is a powerfull front-end framework that makes web development easier than ever before. <br/>
-                    	Twitter Bootstrap themes make developing with Twitter Bootstrap easier still. This site finds the best themes for you, to save you even more time. Awesome.</p>
+                    	Twitter Bootstrap themes make developing with Twitter Bootstrap easier still. <br/>
+                    	This site finds the best themes for you, to save you even more time. Awesome.</p>
                     <p><a class="btn btn-primary btn-large">Browse Themes</a></p>
                 </div>
             </div>
