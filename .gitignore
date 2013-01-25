@@ -1,7 +1,15 @@
 */config/development
 */config/database.php
 */config/config.php
+*/config/s3.php
+*/config/postmark.php
 */logs/log-*.php
 */logs/!index.html
 */cache/*
 */cache/!index.html
+*/logs/*
+*/captcha/*
+nbproject/*
+stats/*
+.htaccess
+*.*~
