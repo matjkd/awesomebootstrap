@@ -188,50 +188,35 @@
         <div class="row">
             <div class="span12">
                 <ul class="thumbnails pull-center">
-                    <li class="span3 thumbnail bg-color-blue fg-color-white">
-                        <div class="image-icon"><i class="icon-globe"></i></div>
-                        <div class="caption fg-color-white">
-                            <h3>Awesome title</h3>
-                            <p>
-                                Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-                                Donec id elit non mi porta gravida at eget metus.
-                                Nullam id dolor id nibh ultricies vehicula.
-                            </p>
-                        </div>
-                    </li>
-                    <li class="span3 thumbnail bg-color-blue-dark fg-color-white">
-                        <div class="image-icon"><i class="icon-magic"></i></div>
-                        <div class="caption fg-color-white">
-                            <h3>Awesome title</h3>
-                            <p>
-                                Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-                                Donec id elit non mi porta gravida at eget metus.
-                                Nullam id dolor id nibh ultricies vehicula.
-                            </p>
-                        </div>
-                    </li>
-                    <li class="span3 thumbnail bg-color-pink-dark fg-color-white">
+                	<li class="span4 thumbnail bg-color-pink-dark fg-color-white">
                         <div class="image-icon"><i class="icon-fire"></i></div>
                         <div class="caption fg-color-white">
-                            <h3>Awesome title</h3>
+                            <h3>Simple to use</h3>
                             <p>
-                                Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-                                Donec id elit non mi porta gravida at eget metus.
-                                Nullam id dolor id nibh ultricies vehicula.
+                                Whether you're building from scratch or using a CMS like wordpress, deploying Bootstrap is simple to put in place
                             </p>
                         </div>
                     </li>
-                    <li class="span3 thumbnail bg-color-purple fg-color-white">
-                        <div class="image-icon"><i class="icon-dashboard"></i></div>
+                    <li class="span4 thumbnail bg-color-blue fg-color-white">
+                        <div class="image-icon"><i class="icon-globe"></i></div>
                         <div class="caption fg-color-white">
-                            <h3>Awesome title</h3>
+                            <h3>Responsive Layouts</h3>
                             <p>
-                                Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-                                Donec id elit non mi porta gravida at eget metus.
-                                Nullam id dolor id nibh ultricies vehicula.
+                                Twitter Bootstrap is fully responsive, adjusting to all screen sizes, from mobile phones to huge displays. No effort required on your part.
                             </p>
                         </div>
                     </li>
+                    <li class="span4 thumbnail bg-color-blue-dark fg-color-white">
+                        <div class="image-icon"><i class="icon-magic"></i></div>
+                        <div class="caption fg-color-white">
+                            <h3>Features! Features! Features!</h3>
+                            <p>
+                                Bootstrap is loaded with cool stuff. Add a theme and there's even more feature. You pretty much have all you need to build an awesome site.
+                            </p>
+                        </div>
+                    </li>
+                    
+                  
                 </ul>
             </div>
         </div>
