@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Welcome extends MY_Controller {
+class Blog extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -19,26 +19,10 @@ class Welcome extends MY_Controller {
 	 */
 	public function index()
 	{
-		$data['main_content'] = 'template/homepage';
+		$data['main_content'] = 'blog/blog';
 		$this->load->vars($data);
 		$this->load->view('template/bootstrap');
 	}
-	
-	public function login() 
-	{
-	
-	if ($this->session->flashdata('message')) {
-      $data['message'] = $this->session->flashdata('message');
-    }
-    $id = 'login';
-    $data['content'] = $this->content_model->get_content($id);
-    $data['main_content'] = "user/login_form";
-    $data['title'] = "Login";
-    
-    $data['page'] = "login";
-    $this->load->vars($data);
-    $this->load->view('template/bootstrap');
-    }
 }
 
 /* End of file welcome.php */
