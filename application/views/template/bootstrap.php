@@ -21,11 +21,11 @@
     <!--[if IE 7]>
     <link rel="stylesheet" href="assets/css/font-awesome-ie7.css"/>
     <![endif]-->
-   
+ <?=$this->load->view('template/analyticstracking')?>  
 </head>
 
 <body>
-<?=$this->load->view('template/analyticstracking')?>
+
 <!--top menu-->
 <section id="top-menu">
     <div class="container">
