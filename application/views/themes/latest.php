@@ -17,13 +17,13 @@
         	<?php foreach($themes as $row): ?>
             <article data-id="id-1" data-type="javascript html php" class="span3 bg-color-blue">
                 <div class="inner-image">
-                    <a href="<?=$row->theme_url?>" target="_blank">
+                    <a href="<?=$row->theme_url?>?ref=matjkd" target="_blank">
                         <img src="https://s3-eu-west-1.amazonaws.com/awesomebootstrap/themes/<?=$row->theme_image?>" alt="photo"/>
                         <span class="frame-overlay"></span>
                     </a>
                 </div>
                 <div class="inner-text">
-                    <h4 class="title"><a href="./blog-single.html"><?=$row->theme_name?>?ref=matjkd</a></h4>
+                    <h4 class="title"><a href="<?=$row->theme_url?>?ref=matjkd"><?=$row->theme_name?></a></h4>
                     <p>Per insolens urbanitas pris tantas corpora cum commune dignissim pro delectus salutatus ever labitur.</p>
                 </div>
             </article>
