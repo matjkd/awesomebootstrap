@@ -25,7 +25,7 @@
 </head>
 
 <body>
-
+<?=$this->load->view('template/analyticstracking')?>
 <!--top menu-->
 <section id="top-menu">
     <div class="container">
