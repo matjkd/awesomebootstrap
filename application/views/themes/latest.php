@@ -4,9 +4,9 @@
                 <ul id="filtrable">
                     <li class="current all"><a href="#all">All</a></li>
                     <li class="html"><a href="#html">Html</a></li>
-                    <li class="css"><a href="#css">CSS</a></li>
-                    <li class="php"><a href="#php">PHP</a></li>
-                    <li class="javascript"><a href="#javascript">JavaScript</a></li>
+                    <li class="css"><a href="#css">Wordpress</a></li>
+                    <li class="php"><a href="#php">Joomla</a></li>
+                    <li class="javascript"><a href="#javascript">Free</a></li>
                 </ul>
             </div>
         </div>

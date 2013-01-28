@@ -38,13 +38,7 @@
                 </nav>
             </div>
             <div class="span4">
-                <ul class="top-social">
-                    <li><a href="#" rel="tooltip" data-placement="bottom" data-original-title="Facebook"><i class="icon-facebook"></i></a></li>
-                    <li><a href="#" rel="tooltip" data-placement="bottom" data-original-title="Twitter"><i class="icon-twitter"></i></a></li>
-                    <li><a href="#" rel="tooltip" data-placement="bottom" data-original-title="LinkedIn"><i class="icon-linkedin"></i></a></li>
-                    <li><a href="#" rel="tooltip" data-placement="bottom" data-original-title="Pinterestin"><i class="icon-pinterest"></i></a></li>
-                    <li><a href="#" rel="tooltip" data-placement="bottom" data-original-title="Google+"><i class="icon-google-plus last"></i></a></li>
-                </ul>
+             &nbsp;
             </div>
         </div>
     </div>
@@ -76,11 +70,7 @@
                 </div>
                 <div class="span4 hidden-phone">
                     <section class="search clearfix">
-                        <form id="search" class="input-append">
-                            <input class="span4" id="appendedInputButton" size="16" type="text" value="Search..." name="search site"
-                                   onfocus="if(this.value=='Search...') this.value=''" onblur="if(this.value=='') this.value='Search...'"/>
-                            <input class="btn search-bt" type="submit" name="submit" value="" />
-                        </form>
+                        &nbsp;
                     </section>
                 </div>
             </div>

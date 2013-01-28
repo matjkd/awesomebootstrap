@@ -26,7 +26,7 @@
 									We will also be adding reviews and tutorials over time, so hopefully this will become a great resource for all things related to bootstrap 
 									and web development.
                                 </p>
-                                <p><a href="./blog-single.html" class="btn btn-large btn-primary"><i class="icon-chevron-right"></i>Continue reading</a></p>
+                              
                             </div>
                         </div>
                     </div>

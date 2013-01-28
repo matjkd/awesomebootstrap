@@ -21,6 +21,7 @@ class Themes extends CI_Controller {
 	{
 		$data['title'] = "Twitter Bootstrap Themes";
 		$data['subtitle'] = "";
+		$data['themes'] = $this->themes_model->get_themes(20);
 		$data['main_content'] = 'template/themes';
 		$this->load->vars($data);
 		$this->load->view('template/bootstrap');
