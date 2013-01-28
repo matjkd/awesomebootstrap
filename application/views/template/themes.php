@@ -1,30 +1,4 @@
 
-<!--page header / breadcrumbs-->
-<section class="breadcrumbs">
-    <div class="container">
-        <div class="page-header">
-            <div class="row">
-                <div class="span8">
-                    <h1>Portfolio <small>/ Phasellus erat felis</small></h1>
-                    <div><a href="#">Home</a> &nbsp;&rsaquo;&nbsp; Portfolio 4 Column Extended</div>
-                </div>
-                <div class="span4 hidden-phone">
-                    <section class="search clearfix">
-                        <form id="search" class="input-append">
-                            <input class="span4" id="appendedInputButton" size="16" type="text" value="Search..." name="search site"
-                                   onfocus="if(this.value=='Search...') this.value=''" onblur="if(this.value=='') this.value='Search...'"/>
-                            <input class="btn search-bt" type="submit" name="submit" value="" />
-                        </form>
-                    </section>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!--container-->
-<section id="container">
-    <div class="container">
         <!--filter-->
         <ul id="filtrable">
             <li class="current all"><a href="#all">All</a></li>
@@ -194,5 +168,4 @@
                 <li><a href="#">&raquo;</a></li>
             </ul>
         </div>
-    </div>
-</section>
+  

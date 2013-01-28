@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Blog extends CI_Controller {
+class Blog extends MY_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -19,6 +19,8 @@ class Blog extends CI_Controller {
 	 */
 	public function index()
 	{
+		$data['title'] = "Blog";
+		$data['subtitle'] = "news/reviews/tutorials";
 		$data['main_content'] = 'blog/blog';
 		$this->load->vars($data);
 		$this->load->view('template/bootstrap');

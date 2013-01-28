@@ -19,6 +19,9 @@ class Welcome extends MY_Controller {
 	 */
 	public function index()
 	{
+		$data['title'] = "Twitter Bootsrap Stuff";
+		$data['subtitle'] = "themes, tutorials etc..";
+		$data['themes'] = $this->themes_model->get_themes(20);
 		$data['main_content'] = 'template/homepage';
 		$this->load->vars($data);
 		$this->load->view('template/bootstrap');
@@ -31,10 +34,10 @@ class Welcome extends MY_Controller {
       $data['message'] = $this->session->flashdata('message');
     }
     $id = 'login';
-    $data['content'] = $this->content_model->get_content($id);
+    //$data['content'] = $this->content_model->get_content($id);
     $data['main_content'] = "user/login_form";
     $data['title'] = "Login";
-    
+    $data['subtitle'] = "";
     $data['page'] = "login";
     $this->load->vars($data);
     $this->load->view('template/bootstrap');

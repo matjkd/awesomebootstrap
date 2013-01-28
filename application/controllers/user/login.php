@@ -28,7 +28,7 @@ class Login extends MY_Controller {
 
         if ($query) { // if the user's credentials validated...
             $this->db->where('username', $this->input->post('username'));
-            $query2 = $this->db->get('keypeople');
+            $query2 = $this->db->get('users');
             if ($query2->num_rows == 1) {
                 foreach ($query2->result() as $row) {
                     $role_level = $row->role;
