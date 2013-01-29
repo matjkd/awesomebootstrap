@@ -17,7 +17,7 @@
         	<?php foreach($themes as $row): ?>
             <article data-id="id-1" data-type="<?=$row->theme_type?>" class="span3 bg-color-blue">
                 <div class="inner-image">
-                    <a href="<?=$row->theme_url?>?ref=matjkd" target="_blank">
+                    <a href="<?=$row->theme_url?><?=$row->theme_affiliate?>" target="_blank">
                         <img src="https://s3-eu-west-1.amazonaws.com/awesomebootstrap/themes/<?=$row->theme_image?>" alt="photo"/>
                         <span class="frame-overlay"></span>
                     </a>

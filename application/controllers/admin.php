@@ -9,17 +9,18 @@ class Admin extends MY_Controller {
         $this->load->model('content_model');
         $this->load->model('captcha_model');
         $this->load->model('gallery_model');
-        $this->load->model('timetable_model');
-        $this->load->model('menu_model');
+    
         $this->load->library('s3');
     }
 
     function index() {
+    	$data['title'] = "Admin";
+		$data['subtitle'] = "dashboard";
         $data['main_content'] = "admin/dashboard";
         $data['pages'] = $this->content_model->get_all_content();
         $data['seo_links'] = $this->content_model->get_seo_links();
         $this->load->vars($data);
-        $this->load->view('template/main');
+        $this->load->view('template/bootstrap');
     }
 
     function content() {
@@ -538,7 +539,7 @@ class Admin extends MY_Controller {
         $data['pages'] = $this->content_model->get_all_content();
         $data['category'] = "2";
         $this->load->vars($data);
-        $this->load->view('template/main');
+        $this->load->view('template/bootstrap');
     }
 
     function add_class_content() {

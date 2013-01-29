@@ -132,7 +132,7 @@
     <div class="container">
         <div class="row">
             <div class="span4">
-                <p class="copyright">&copy; Copyright 2012. Powered by <a href="http://dxthemes.com/">DX Themes</a>.</p>
+                <p class="copyright">&copy; Copyright 2012. Developed by <a href="http://www.redstudio.co.uk/">Redstudio</a>.</p>
                 <p><a href="#">Privacy Policy</a></p>
                    
             </div>
