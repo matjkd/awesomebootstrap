@@ -1,36 +1,43 @@
-
+ <?php $this->datestring = "%l %j%S %M  %Y";?>
 
 
         <div class="row">
             <section id="page-sidebar" class="pull-right span8">
-
+<?php foreach($blog as $row):?>
+	
+	<?php 
+	$unix = $row->date_added;
+			$timeTrim = mdate($this->datestring, $unix);
+			
+	 ?>
                 <article class="blog-post">
                     <div class="row">
                         <div class="span8">
-                            <h3 class="post-title"><a href="./blog-single.html">A place to find the best Twitter Bootstrap Themes</a></h3>
+                            <h3 class="post-title"><a href="<?=base_url()?>blog/viewblog/<?=$row->menu?>"> <?=$row->title?></a></h3>
+                            
                             <ul class="post-meta">
-                                <li><i class="icon-calendar"></i> <a href="#">January 28, 2013</a></li>
-                                <li><i class="icon-user"></i> <a href="#">Mat</a></li>
+                                <li><i class="icon-calendar"></i> <a href="#"><?=$timeTrim?></a></li>
+                                <li><i class="icon-user"></i> <a href="#"><?=$row->added_by?></a></li>
                                 <li><i class="icon-list-alt"></i> <a href="#">News</a>, <a href="#">Web Design</a></li>
                                 <li><i class="icon-tag"></i> <a href="#">CSS3</a> <a href="#">HTML5</a> <a href="#">Responsive</a></li>
                                 <li><i class="icon-comment"></i> <a href="#">0 Comments</a></li>
+                                
+                                 <?php
+        $is_logged_in = $this->session->userdata('is_logged_in');
+        if (!isset($is_logged_in) || $is_logged_in == true) {
+            echo "<li><a href='" . base_url() . "admin/edit/" . $row->content_id . "'>edit this page</a></li>";
+        }
+        ?>
                             </ul>
                            
                             <div class="post-content">
-                                <p>
-                                    Welcome to Awesome Bootstrap. The purpose of this site is to find all of the best Bootstrap themes available on the internet. 
-                                    Both premium and free templates will be added. There are already a number of sites that sell themes, we aren't here to compete,
-                                    but to give you the best selection from all over. </p>
-                                <p>
-                                   
-									We will also be adding reviews and tutorials over time, so hopefully this will become a great resource for all things related to bootstrap 
-									and web development.
-                                </p>
+                              <?=$row->content?>
                               
                             </div>
                         </div>
                     </div>
                 </article>
+                <?php endforeach;?>
 
                 <hr />
 

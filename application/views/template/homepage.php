@@ -36,8 +36,11 @@
                 </ul>
             </div>
         </div>
+      
         <div class="row">
             <div class="span12">
+            	
+            
                 <div class="hero-unit pull-center">
                     <h1>Welcome to Awesome Bootstrap</h1>
                     <p>Twitter Bootstrap is a powerfull front-end framework that makes web development easier than ever before. <br/>
@@ -46,6 +49,12 @@
                     <p><a class="btn btn-primary btn-large">Browse Themes</a></p>
                 </div>
             </div>
+        </div>
+        
+          <div class="row">
+        	<div class="span12">
+        		
+        		</div>
         </div>
         <!-- // -->
        <?=$this->load->view('themes/latest')?>

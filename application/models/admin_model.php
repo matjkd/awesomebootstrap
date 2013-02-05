@@ -11,7 +11,7 @@ class Admin_model extends CI_Model {
         $this->db->where('admin_id', $id);
         $query = $this->db->get('admin');
         if ($query->num_rows == 1)
-            ; {
+             {
             return $query->result();
         }
     }

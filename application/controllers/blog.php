@@ -21,9 +21,21 @@ class Blog extends MY_Controller {
 	{
 		$data['title'] = "Blog";
 		$data['subtitle'] = "news/reviews/tutorials";
+		$data['blog'] = $this->content_model->get_content_cat('blog');
 		$data['main_content'] = 'blog/blog';
 		$this->load->vars($data);
 		$this->load->view('template/bootstrap');
+	}
+	
+	public function viewblog($menu)
+	{
+		$data['title'] = "Blog";
+		$data['subtitle'] = "news/reviews/tutorials";
+		$data['blog'] = $this->content_model->get_content($menu);
+		$data['main_content'] = 'blog/blog';
+		$this->load->vars($data);
+		$this->load->view('template/bootstrap');
+		
 	}
 }
 

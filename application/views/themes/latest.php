@@ -1,4 +1,6 @@
  <div class="row">
+ 
+ 	
             <div class="span12">
                 <!--filter-->
                 <ul id="filtrable">
@@ -23,8 +25,8 @@
                     </a>
                 </div>
                 <div class="inner-text">
-                    <h4 class="title"><a href="<?=$row->theme_url?>?ref=matjkd"><?=$row->theme_name?></a></h4>
-                    <p>Per insolens urbanitas pris tantas corpora cum commune dignissim pro delectus salutatus ever labitur.</p>
+                    <h4 class="title"><a href="<?=$row->theme_url?><?=$row->theme_affiliate?>"><?=$row->theme_name?></a></h4>
+                    <p><?=$row->description?></p>
                 </div>
             </article>
             

@@ -60,7 +60,7 @@ class Admin extends MY_Controller {
         $data['captcha'] = $this->captcha_model->initiate_captcha();
         $data['seo_links'] = $this->content_model->get_seo_links();
 		$data['galleries'] = $this->gallery_model->get_galleries();
-		$data['events'] = $this->events_model->get_events();
+		
 		 $data['column1'] = 'ten';
 		$data['column2'] = 'six';
         $data['main_content'] = "admin/edit_content";
@@ -104,7 +104,7 @@ class Admin extends MY_Controller {
 				 $menuLinkvalue = $row->menu;
 				 endforeach;
 				 //$this->session->set_flashdata('message', 'Content Updated');
-                redirect('welcome/home/'. $menuLinkvalue);   // or whatever logic needs to occur
+              //  redirect('welcome/home/'. $menuLinkvalue);   // or whatever logic needs to occur
           
         }
     }
@@ -209,6 +209,13 @@ class Admin extends MY_Controller {
         $this->timetable_model->add_entry();
         redirect($this->agent->referrer());
     }
+	
+	function add_theme() {
+		$data['main_content'] = "admin/add_theme";
+       
+        $this->load->vars($data);
+        $this->load->view('template/main');
+	}
 
     function editnews() {
 
@@ -322,6 +329,76 @@ class Admin extends MY_Controller {
         }
     }
 
+function upload_theme($id = 0) {
+
+        $this->gallery_model->do_upload();
+
+
+        if (!empty($_FILES) && $_FILES['file']['error'] != 4) {
+
+            $fileName = $_FILES['file']['name'];
+            $tmpName = $_FILES['file']['tmp_name'];
+            $fileName = str_replace(" ", "_", $fileName);
+            
+            $filelocation = $fileName;
+
+            $thefile = file_get_contents($tmpName, true);
+
+            //add filename into database
+            //get blog id
+            if ($id == 0) {
+                $blog_id = mysql_insert_id();
+            } else {
+                $blog_id = $id;
+            }
+			$safefileName = str_replace(",", "_", $fileName);
+			$this->content_model->add_theme_file($fileName, $blog_id);
+            //move the file
+
+           	if ($this->s3->putObject($thefile, $this->bucket, "themes/".$safefileName, S3:: ACL_PUBLIC_READ)) {
+                //echo "We successfully uploaded your file.";
+                $this->session->set_flashdata('message', 'News Added and file uploaded successfully');
+            } else {
+                //echo "Something went wrong while uploading your file... sorry.";
+                $this->session->set_flashdata('message', 'News Added, but your file did not upload');
+            }
+
+            //uploadthumb
+            $thumblocation = base_url() . 'images/temp/thumbs/' . $safefileName;
+			
+            $newfilename = "thumb_" . $safefileName;
+
+
+            $newfile = file_get_contents($thumblocation, true);
+
+            if ($this->s3->putObject($newfile, $this->bucket, "themes/thumbs/".$newfilename, S3:: ACL_PUBLIC_READ)) {
+                //echo "We successfully uploaded your file.";
+                $this->session->set_flashdata('message', 'News Added and file uploaded successfully');
+            } else {
+                //echo "Something went wrong while uploading your file... sorry.";
+                $this->session->set_flashdata('message', 'News Added, but your thumb '. $safefileName .' did not upload');
+            }
+//delete files from server
+            $this->gallery_path = "./images/temp";
+            unlink($this->gallery_path . '/' . $fileName . '');
+            unlink($this->gallery_path . '/thumbs/' . $fileName . '');
+        } else {
+
+            $this->session->set_flashdata('message', 'News Added');
+        }
+    }
+
+	function submit_theme() {
+		
+		if($this->content_model->add_theme()) {
+			 $blog_id = mysql_insert_id();
+			$this->upload_theme();
+			 redirect('admin');   // or whatever logic needs to occur
+		}
+		
+		
+	}
+	
     function submit_content() {
         $this->form_validation->set_rules('title', 'Title', 'trim|max_length[255]|required');
         $this->form_validation->set_rules('content', 'Content', 'trim');

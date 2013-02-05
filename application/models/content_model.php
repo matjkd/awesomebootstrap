@@ -216,6 +216,22 @@ function link_gallery_to_event($eventid, $galleryID) {
             return $query->result();
         }
     }
+	
+	function add_theme() {
+		 $form_data = array(
+            'theme_name' => $this->input->post('themename'),
+            'theme_url' => $this->input->post('themeurl'),
+            'theme_type' => $this->input->post('themetype'),
+            'theme_price' => $this->input->post('themeprice'),
+            'theme_currency' => $this->input->post('currency'),
+            'theme_affiliate' => $this->input->post('affiliate'),
+            'theme_source' => $this->input->post('website'),
+             'description' => $this->input->post('description'),
+            'date_added' => time()
+        );
+        $insert = $this->db->insert('themes', $form_data);
+        return $insert;
+	}
 
     function add_content() {
 
@@ -279,6 +295,22 @@ function link_gallery_to_event($eventid, $galleryID) {
         return $update;
     }
 
+
+ /**
+     *
+     * @param type $filename
+     * @param type $blog_id
+     * @return type 
+     */
+    function add_theme_file($filename, $blog_id) {
+        $content_update = array(
+            'theme_image' => $filename
+        );
+
+        $this->db->where('theme_id', $blog_id);
+        $update = $this->db->update('themes', $content_update);
+        return $update;
+    }
     /**
      *
      * @param type $filename

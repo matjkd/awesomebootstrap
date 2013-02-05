@@ -51,11 +51,11 @@
     <div class="container">
         <div class="row">
             <div class="span6 logo ">
-                <h1><a class="logo-img site-title" href="./" title="responsive template"><i class="icon-bolt "></i> Awesome Bootstrap</a></h1>
+                <h1><a class="logo-img site-title" href="./" title="responsive template">Awesome Bootstrap</a></h1>
             </div>
-            <div class="span6">
+            <div class="span6 pull-right">
             	
-               
+               <?=$this->load->view('ads/smallbanner')?>
             </div>
         </div>
     </div>
@@ -67,6 +67,8 @@
         <div class="page-header">
             <div class="row">
                 <div class="span8">
+                	
+                	<?php if(!isset($title)) { $title="Awesome"; $subtitle = ""; }?>
                     <h1><?=$title?> <small><?=$subtitle?></small></h1>
                     <div><a href="<?=base_url()?>">Home</a> &nbsp;&rsaquo;&nbsp;</div>
                 </div>
