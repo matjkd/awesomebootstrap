@@ -6,9 +6,9 @@
                 <ul id="filtrable">
                     <li class="current all"><a href="#all">All</a></li>
                     <li class="html"><a href="#html">Html</a></li>
-                    <li class="css"><a href="#wordpress">Wordpress</a></li>
-                    <li class="php"><a href="#joomla">Joomla</a></li>
-                    <li class="javascript"><a href="#free">Free</a></li>
+                    <li class="css"><a href="#css">CSS</a></li>
+                    <li class="less"><a href="#less">LESS</a></li>
+                    <li class="free"><a href="#free">Free</a></li>
                 </ul>
             </div>
         </div>
@@ -27,6 +27,8 @@
                 <div class="inner-text">
                     <h4 class="title"><a href="<?=$row->theme_url?><?=$row->theme_affiliate?>"><?=$row->theme_name?></a></h4>
                     <p><?=$row->description?></p>
+                    <br/>
+                   <a href="http://<?=$row->theme_source?>"><?=$row->theme_source?></a>
                 </div>
             </article>
             

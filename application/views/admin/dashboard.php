@@ -10,7 +10,7 @@
 
 
 <h3>News</h3>
-<a href="<?=base_url()?>admin/add_news_content">Add News</a><br/>
+<a href="<?=base_url()?>admin/add_theme">Add themes</a><br/>
 
 <br/>
 <br/>

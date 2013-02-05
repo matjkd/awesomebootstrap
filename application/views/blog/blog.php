@@ -55,46 +55,7 @@
             		
             	</section>
            
-            <!--twitter -->
-            <section id="twitter-sidebar">
-                <h3 class="widget-title">Twitter</h3>
-                <div class="twitter"></div>
-                <script type="text/javascript">
-                    $(document).ready(function(){
-                        $(".twitter").tweet({
-                            join_text: "auto",
-                            username: "matjkd",
-                            avatar_size:40,
-                            count: 3,
-                            auto_join_text_default: "we said,",
-                            auto_join_text_ed: "we",
-                            auto_join_text_ing: "we were",
-                            auto_join_text_reply: "we replied",
-                            auto_join_text_url: "we were checking out",
-                            loading_text: "loading tweets..."
-                        });
-                    });
-                </script>
-            </section>
-            <section>
-                <h3 class="widget-title">Latest Themes</h3>
-                <div id="latestwork-sidebar" class="carousel slide">
-                    <div class="carousel-inner">
-                        <div class="active item"><img src="example/latest3.jpg" alt="photo"/></div>
-                        <div class="item"><img src="example/latest4.jpg" alt="photo"/></div>
-                        <div class="item"><img src="example/latest5.jpg" alt="photo"/></div>
-                    </div>
-                    <a class="carousel-control left" href="#latestwork-sidebar" data-slide="prev"></a>
-                    <a class="carousel-control right" href="#latestwork-sidebar" data-slide="next"></a>
-                </div>
-                <script type="text/javascript">
-                    $(document).ready(function(){
-                        $('.carousel').carousel({
-                            interval: 5000
-                        })
-                    });
-                </script>
-            </section>
+           
           
 
             </aside>
