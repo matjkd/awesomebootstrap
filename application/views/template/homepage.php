@@ -46,7 +46,7 @@
                     <p>Twitter Bootstrap is a powerfull front-end framework that makes web development easier than ever before. <br/>
                     	Twitter Bootstrap themes make developing with Twitter Bootstrap easier still. <br/>
                     	This site finds the best themes for you, to save you even more time. Awesome.</p>
-                    <p><a class="btn btn-primary btn-large">Browse Themes</a></p>
+                    <p><a class="btn btn-primary btn-large" href="<?=base_url()?>themes">Browse Themes</a></p>
                 </div>
             </div>
         </div>

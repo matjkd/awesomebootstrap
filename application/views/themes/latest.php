@@ -25,10 +25,10 @@
                     </a>
                 </div>
                 <div class="inner-text">
-                    <h4 class="title"><a href="<?=$row->theme_url?><?=$row->theme_affiliate?>"><?=$row->theme_name?></a></h4>
+                    <h4 class="title"><a target="_blank" href="<?=$row->theme_url?><?=$row->theme_affiliate?>"><?=$row->theme_name?></a></h4>
                     <p><?=$row->description?></p>
                     <br/>
-                   <a href="http://<?=$row->theme_source?>"><?=$row->theme_source?></a>
+                   <a target="_blank" href="http://<?=$row->theme_source?>"><?=$row->theme_source?></a>
                 </div>
             </article>
             

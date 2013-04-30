@@ -51,7 +51,7 @@
     <div class="container">
         <div class="row">
             <div class="span6 logo ">
-                <h1><a class="logo-img site-title" href="./" title="responsive template">Awesome Bootstrap</a></h1>
+                <h1><a class="logo-img site-title" href="<?=base_url()?>" title="responsive template">Awesome Bootstrap</a></h1>
             </div>
             <div class="span6 pull-right">
             	
@@ -97,7 +97,7 @@
     <div class="container">
         <div class="row">
             <div class="span4">
-               &nbsp;
+               Twitter Bootstrap is a powerfull front-end framework that makes building sites simple. Bootstrap Templates take it a step further
             </div>
             <div class="span8">
                 <div class="row">
@@ -120,7 +120,7 @@
                 </div>
             </div>
             <div class="span4">
-                <p class="heading">Company</p>
+                <p class="heading">Menu</p>
                 <ul class="footer-navigate">
                      <?=$this->load->view('template/menu')?>
                 </ul>
