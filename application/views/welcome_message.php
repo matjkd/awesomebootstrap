@@ -411,7 +411,7 @@
     <div class="container">
         <div class="row">
             <div class="span4">
-                <p class="copyright">&copy; Copyright 2012. Powered by <a href="http://dxthemes.com/">DX Themes</a>.</p>
+                <p class="copyright">&copy; Copyright 2012. Powered by <a href="http://bootstrapsauce.com/cart/dxlink">DX Themes</a>.</p>
             </div>
             <div class="span8 hidden-phone">
                 <ul class="pull-right">

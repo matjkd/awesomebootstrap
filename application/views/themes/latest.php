@@ -20,7 +20,7 @@
             <article data-id="id-1" data-type="<?=$row->theme_type?>" class="span3 bg-color-blue">
                 <div class="inner-image">
                     <a href="<?=$row->theme_url?><?=$row->theme_affiliate?>" target="_blank">
-                        <img src="https://s3-eu-west-1.amazonaws.com/awesomebootstrap/themes/<?=$row->theme_image?>" alt="photo"/>
+                        <img src="<?=$row->theme_image?>" alt="<?=$row->theme_name?>"/>
                         <span class="frame-overlay"></span>
                     </a>
                 </div>
